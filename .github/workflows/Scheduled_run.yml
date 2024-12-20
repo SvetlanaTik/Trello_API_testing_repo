@@ -25,4 +25,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: Check files
         run: ls
+
+      - name: Install node.js
+        uses: actions/setup-node@v4
+
+      - name: Check node.js version
+        run: node -v
       
