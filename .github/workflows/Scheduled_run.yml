@@ -33,7 +33,7 @@ jobs:
         run: node -v
       
       - name: Check npm version
-        run: nmp -v
+        run: nmp --version
 
       - name: Install Newman
         run: |
