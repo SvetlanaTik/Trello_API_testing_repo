@@ -57,8 +57,8 @@ jobs:
         with:
           server_address: smtp.mail.ru
           server_port: 465
-          username: setka.t@mail.ru
-          password: FgV1XyGeaeV5sETeFffq
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
           subject: Workflow test result
           to: setka.t@mail.ru
           from: Svetlana Tikhonova <setka.t@mail.ru>
