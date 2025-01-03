@@ -51,3 +51,18 @@ jobs:
         with:
           name: test report
           path: '*html'
+      
+      - name: Send email with report
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.mail.ru
+          server_port: 465
+          username: setka.t@mail.ru
+          password: FgV1XyGeaeV5sETeFffq
+          subject: Workflow test result
+          to: setka.t@mail.ru
+          from: Svetlana Tikhonova <setka.t@mail.ru>
+          body: Check the report below.
+          attachments: '*html'
+   
+  
